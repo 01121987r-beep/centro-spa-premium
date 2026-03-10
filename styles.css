@@ -480,6 +480,8 @@ select {
 
 .service-card {
   appearance: none;
+  display: grid;
+  grid-template-rows: 340px auto;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.74);
   border: 1px solid var(--line);
@@ -495,7 +497,7 @@ select {
 }
 
 .service-media {
-  height: 300px;
+  height: 340px;
   overflow: hidden;
 }
 
@@ -514,15 +516,15 @@ select {
 }
 
 .services-grid .service-card:nth-child(1) .service-media img {
-  object-position: center 18%;
+  object-position: center 32%;
 }
 
 .services-grid .service-card:nth-child(2) .service-media img {
-  object-position: center 30%;
+  object-position: center 35%;
 }
 
 .services-grid .service-card:nth-child(3) .service-media img {
-  object-position: center 28%;
+  object-position: center 24%;
 }
 
 .service-copy {
@@ -1030,7 +1032,7 @@ body.modal-open .whatsapp-float {
   }
 
   .service-media {
-    height: 240px;
+    height: 260px;
   }
 
   .hero-card {
