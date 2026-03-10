@@ -529,6 +529,9 @@ select {
 
 .service-copy {
   padding: 24px;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
 }
 
 .service-copy h3 {
@@ -539,7 +542,8 @@ select {
 
 .service-link {
   display: inline-flex;
-  margin-top: 16px;
+  margin-top: auto;
+  padding-top: 16px;
   color: var(--terracotta-dark);
   font-weight: 700;
 }
