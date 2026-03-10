@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Botanica | Spa & Beauty Retreat</title>
+    <meta
+      name="description"
+      content="Aura Botanica is a premium beauty and spa retreat offering facial treatments, body rituals, massages and tailored wellness experiences in a refined, relaxing setting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-left"></div>
+    <div class="page-glow glow-right"></div>
+
+    <header class="site-header">
+      <div class="header-shell">
+        <a class="brand" href="#top" aria-label="Aura Botanica home">
+          <span class="brand-mark">
+            <img src="logo-aura-botanica.svg" alt="Aura Botanica logo" />
+          </span>
+          <span class="brand-copy">
+            <strong>Aura Botanica</strong>
+            <span>Spa & Beauty Retreat</span>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main menu">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#reviews">Testimonials</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch" aria-label="Language switcher">
+            <a href="index.html">ITA</a>
+            <a class="is-active" href="index-en.html">ENG</a>
+          </div>
+          <button class="btn btn-primary header-book" type="button" data-open-modal="true">Book</button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile menu">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#reviews">Testimonials</a>
+        <button class="btn btn-primary mobile-book" type="button" data-open-modal="true">Book</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1800&q=80"
+            alt="Premium spa interior with warm light and relaxing atmosphere"
+          />
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content reveal">
+          <span class="eyebrow">Tailored beauty and wellness rituals</span>
+          <h1>A slow, elegant and quiet space dedicated to your balance.</h1>
+          <p>
+            Facial treatments, massages and body rituals designed to restore lightness,
+            radiance and a tangible sense of harmony.
+          </p>
+          <div class="hero-actions-row">
+            <button class="btn btn-primary" type="button" data-open-modal="true">Book a ritual</button>
+            <a class="btn btn-secondary" href="#services">Explore services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft about-grid" id="about">
+        <div class="about-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80"
+            alt="Wellness treatment detail with folded towels and warm stones"
+          />
+        </div>
+        <div class="about-copy reveal delay-1">
+          <span class="eyebrow">About</span>
+          <h2>A beauty retreat conceived as an urban refuge, refined yet deeply genuine.</h2>
+          <p>
+            Aura Botanica was created to offer a different pace: softened interiors, curated protocols,
+            precise manual techniques and treatments selected for both aesthetic and sensory wellbeing.
+          </p>
+          <p>
+            Every experience is shaped with attention to detail, natural materials and a calm,
+            professional and deeply relaxing approach.
+          </p>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Signature services</span>
+          <h2>Essential treatments carried out with precision, warmth and a premium atmosphere.</h2>
+        </div>
+
+        <div class="services-grid">
+          <button class="service-card reveal" type="button" data-open-modal="true" data-treatment="Facial treatments">
+            <div class="service-media">
+              <img
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80"
+                alt="Professional facial treatment"
+              />
+            </div>
+            <div class="service-copy">
+              <h3>Facial treatments</h3>
+              <p>Advanced skincare, deep hydration and glow rituals for a luminous, rested complexion.</p>
+              <span class="service-link">Request information</span>
+            </div>
+          </button>
+
+          <button class="service-card reveal delay-1" type="button" data-open-modal="true" data-treatment="Body treatments">
+            <div class="service-media">
+              <img
+                src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80"
+                alt="Body treatment in spa"
+              />
+            </div>
+            <div class="service-copy">
+              <h3>Body treatments</h3>
+              <p>Scrubs, wraps and contouring rituals designed to leave the body feeling lighter and restored.</p>
+              <span class="service-link">Request information</span>
+            </div>
+          </button>
+
+          <button class="service-card reveal delay-2" type="button" data-open-modal="true" data-treatment="Nails">
+            <div class="service-media">
+              <img
+                src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+                alt="Premium manicure"
+              />
+            </div>
+            <div class="service-copy">
+              <h3>Nails</h3>
+              <p>Clean, elegant manicure and pedicure services with an impeccable finish and refined detail.</p>
+              <span class="service-link">Request information</span>
+            </div>
+          </button>
+
+          <button class="service-card reveal delay-3" type="button" data-open-modal="true" data-treatment="Massages">
+            <div class="service-media">
+              <img
+                src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=80"
+                alt="Relaxing massage in wellness retreat"
+              />
+            </div>
+            <div class="service-copy">
+              <h3>Massages</h3>
+              <p>Relaxing, deep release and rebalancing techniques to support both body and breath.</p>
+              <span class="service-link">Request information</span>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <section class="section section-dark philosophy-grid" id="philosophy">
+        <div class="philosophy-copy reveal">
+          <span class="eyebrow">Experience and philosophy</span>
+          <h2>Quiet wellbeing, natural materials and thoughtful gestures.</h2>
+          <p>
+            Our idea of luxury is not excess, but felt quality: generous space, tactile textures,
+            botanical scents, soft light and rituals centred on listening and care.
+          </p>
+        </div>
+
+        <div class="philosophy-visual reveal delay-1">
+          <img class="philosophy-slide is-active" src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80" alt="Natural textures and spa ritual detail" />
+          <img class="philosophy-slide" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" alt="Wellness interior with dim light and water" />
+          <img class="philosophy-slide" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1200&q=80" alt="Premium relaxing massage" />
+          <div class="philosophy-badge">
+            <strong>Natural textures, slow rituals, genuine listening.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section" id="reviews">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2>A sense of calm, precision and care that remains long after the treatment ends.</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <p>
+              “An extremely refined experience. Beautiful atmosphere, impeccable welcome and a truly restorative massage.”
+            </p>
+            <strong>Chiara M.</strong>
+          </article>
+          <article class="testimonial-card reveal delay-1">
+            <p>
+              “I found exactly what I was looking for: a quiet, elegant place with remarkable quality in every detail.”
+            </p>
+            <strong>Elena R.</strong>
+          </article>
+          <article class="testimonial-card reveal delay-2">
+            <p>
+              “Excellent facial treatment, premium atmosphere without feeling distant. You genuinely feel taken care of.”
+            </p>
+            <strong>Sofia T.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="booking">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Visit us or get in touch to design the treatment that fits you best.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <div class="contact-item">
+              <strong>Address</strong>
+              <p>Via del Benessere 18, Milan</p>
+            </div>
+            <div class="contact-item">
+              <strong>Contact</strong>
+              <p>info@aurabotanica.it</p>
+              <p>+39 02 1234 5678</p>
+            </div>
+            <div class="contact-item">
+              <strong>Opening hours</strong>
+              <p>Mon - Sat · 10:00 AM - 8:00 PM</p>
+              <p>Sunday by appointment</p>
+            </div>
+            <div class="booking-actions">
+              <button class="btn btn-primary" type="button" data-open-modal="true">Book now</button>
+              <a class="btn btn-secondary" href="tel:+390212345678">Call us</a>
+            </div>
+          </div>
+          <div class="map-card reveal delay-1">
+            <iframe
+              title="Aura Botanica map"
+              src="https://www.google.com/maps?q=Milano%20Duomo&z=13&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Aura Botanica</strong>
+        <span>Spa & Beauty Retreat</span>
+      </div>
+      <div>
+        <span>Via del Benessere 18, Milan</span>
+        <span>info@aurabotanica.it · +39 02 1234 5678</span>
+      </div>
+      <div>
+        <span>Mon - Sat 10:00 AM - 8:00 PM</span>
+        <div class="social-links" aria-label="Aura Botanica social links">
+          <a href="https://facebook.com/aurabotanicaspa" target="_blank" rel="noopener noreferrer" aria-label="Aura Botanica Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.5 21v-8.1h2.7l.4-3.2h-3.1V7.65c0-.93.26-1.56 1.59-1.56H16.7V3.23c-.29-.04-1.28-.13-2.43-.13-2.41 0-4.06 1.47-4.06 4.17v2.34H7.5v3.2h2.71V21h3.29Z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/aurabotanicaspa" target="_blank" rel="noopener noreferrer" aria-label="Aura Botanica Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.95 1.35a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16ZM12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85Zm0 1.8A3.35 3.35 0 1 0 15.35 12 3.35 3.35 0 0 0 12 8.65Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/390212345678?text=Hello%2C%20I%20would%20like%20to%20book%20a%20spa%20treatment." target="_blank" rel="noopener noreferrer" aria-label="Contact Aura Botanica on WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.52 3.48A11.8 11.8 0 0 0 12.12 0C5.53 0 .17 5.36.17 11.95c0 2.1.55 4.14 1.6 5.95L0 24l6.3-1.65a11.88 11.88 0 0 0 5.82 1.49h.01c6.58 0 11.95-5.36 11.95-11.95 0-3.19-1.24-6.18-3.56-8.41Zm-8.4 18.34h-.01a9.92 9.92 0 0 1-5.05-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.87 9.87 0 0 1-1.52-5.23c0-5.48 4.45-9.93 9.93-9.93 2.65 0 5.14 1.03 7.01 2.92a9.86 9.86 0 0 1 2.9 7.02c0 5.48-4.45 9.93-9.92 9.93Zm5.45-7.44c-.3-.15-1.77-.88-2.04-.98-.27-.1-.46-.15-.66.15-.2.3-.76.98-.94 1.18-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.41-1.51-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.66-1.6-.91-2.19-.24-.58-.49-.5-.66-.5h-.56c-.2 0-.53.08-.8.38-.27.3-1.03 1-1.03 2.43 0 1.43 1.05 2.82 1.19 3.01.15.2 2.06 3.15 5 4.41.7.3 1.25.48 1.67.62.7.22 1.33.19 1.83.12.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
+      </svg>
+    </a>
+
+    <div class="modal" id="bookingModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+        <button class="modal-close" type="button" aria-label="Close" data-close-modal="true">×</button>
+        <span class="eyebrow">Booking</span>
+        <h2 id="bookingModalTitle">Request your treatment</h2>
+        <p class="modal-copy">
+          Leave your details and choose the ritual you would like to explore. We will contact you shortly with availability and confirmation.
+        </p>
+
+        <form class="booking-form" id="bookingForm" novalidate>
+          <input id="selectedTreatment" name="selectedTreatment" type="hidden" />
+          <div class="form-grid">
+            <div>
+              <label for="bookingName">Full name</label>
+              <input id="bookingName" name="name" type="text" required />
+            </div>
+            <div>
+              <label for="bookingEmail">Email</label>
+              <input id="bookingEmail" name="email" type="email" required />
+            </div>
+            <div>
+              <label for="bookingTreatment">Treatment</label>
+              <select id="bookingTreatment" name="treatment" required>
+                <option value="">Select</option>
+                <option>Facial treatments</option>
+                <option>Body treatments</option>
+                <option>Nails</option>
+                <option>Massages</option>
+                <option>Signature ritual</option>
+              </select>
+            </div>
+            <div>
+              <label for="bookingWhen">Preferred day/time</label>
+              <input id="bookingWhen" name="when" type="text" placeholder="Ex. Friday afternoon" />
+            </div>
+          </div>
+          <div>
+            <label for="bookingMessage">Message</label>
+            <textarea id="bookingMessage" name="message" placeholder="Useful notes, specific needs, preferred type of experience" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send request</button>
+          <p class="form-status" id="bookingFormStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
