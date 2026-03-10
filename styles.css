@@ -495,9 +495,7 @@ select {
 }
 
 .service-media {
-  aspect-ratio: 4 / 3;
-  min-height: 290px;
-  height: auto;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -1032,9 +1030,7 @@ body.modal-open .whatsapp-float {
   }
 
   .service-media {
-    aspect-ratio: 4 / 3;
-    min-height: 240px;
-    height: auto;
+    height: 240px;
   }
 
   .hero-card {
