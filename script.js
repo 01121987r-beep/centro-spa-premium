@@ -44,6 +44,7 @@ function setModalOpen(isOpen) {
   modal.classList.toggle('is-open', isOpen);
   modal.setAttribute('aria-hidden', String(!isOpen));
   document.body.style.overflow = isOpen ? 'hidden' : '';
+  document.body.classList.toggle('modal-open', isOpen);
 
   if (bookingStatus && isOpen) {
     bookingStatus.textContent = '';
