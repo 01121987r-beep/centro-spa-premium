@@ -225,7 +225,7 @@ select {
   background: rgba(255, 255, 255, 0.65);
 }
 
-.mobile-book {
+.mobile-nav .mobile-book {
   justify-content: center;
   background: var(--deep-teal);
   color: #f5f3ef;
@@ -233,7 +233,8 @@ select {
   box-shadow: none;
 }
 
-.mobile-book:hover {
+.mobile-nav .mobile-book:hover,
+.mobile-nav .mobile-book:focus-visible {
   background: #274141;
 }
 
