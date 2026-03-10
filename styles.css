@@ -227,15 +227,15 @@ select {
 
 .mobile-nav .mobile-book {
   justify-content: center;
-  background: var(--deep-teal);
-  color: #f5f3ef;
-  border-color: transparent;
-  box-shadow: none;
+  background: var(--deep-teal) !important;
+  color: #f5f3ef !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .mobile-nav .mobile-book:hover,
 .mobile-nav .mobile-book:focus-visible {
-  background: #274141;
+  background: #274141 !important;
 }
 
 .hero {
