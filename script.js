@@ -10,16 +10,31 @@ const selectedTreatment = document.querySelector('#selectedTreatment');
 const modalTitle = document.querySelector('#bookingModalTitle');
 const philosophySlides = document.querySelectorAll('.philosophy-slide');
 const isEnglishPage = document.documentElement.lang.toLowerCase().startsWith('en');
+const COOKIE_KEY = 'aura_botanica_cookie_consent_v1';
 const uiText = isEnglishPage
   ? {
       modalDefaultTitle: 'Request your treatment',
       formMissing: 'Please fill in name, email, treatment and message before sending.',
-      formSuccessPrefix: 'Request received for'
+      formSuccessPrefix: 'Request received for',
+      cookieAria: 'Cookie preferences',
+      cookieBody:
+        'This website uses technical cookies and, with consent, analytics cookies to improve the browsing experience.',
+      cookieLinkLabel: 'Read the Cookie Policy',
+      cookieHref: 'cookie-en.html',
+      cookieReject: 'Reject',
+      cookieAccept: 'Accept'
     }
   : {
       modalDefaultTitle: 'Richiedi il tuo trattamento',
       formMissing: 'Compila nome, email, trattamento e messaggio prima di inviare.',
-      formSuccessPrefix: 'Richiesta ricevuta per'
+      formSuccessPrefix: 'Richiesta ricevuta per',
+      cookieAria: 'Preferenze cookie',
+      cookieBody:
+        'Questo sito utilizza cookie tecnici e, previo consenso, cookie analitici per migliorare l’esperienza di navigazione.',
+      cookieLinkLabel: 'Leggi la Cookie Policy',
+      cookieHref: 'cookie.html',
+      cookieReject: 'Rifiuta',
+      cookieAccept: 'Accetta'
     };
 
 if (header && menuToggle && mobileNav) {
@@ -146,3 +161,45 @@ if (philosophySlides.length > 1) {
     philosophySlides[activeSlide].classList.add('is-active');
   }, 3200);
 }
+
+function saveCookieConsent(choice) {
+  localStorage.setItem(
+    COOKIE_KEY,
+    JSON.stringify({
+      choice,
+      timestamp: new Date().toISOString()
+    })
+  );
+}
+
+function createCookieBanner() {
+  if (localStorage.getItem(COOKIE_KEY) || document.querySelector('.cookie-banner')) {
+    return;
+  }
+
+  const banner = document.createElement('aside');
+  banner.className = 'cookie-banner';
+  banner.setAttribute('role', 'dialog');
+  banner.setAttribute('aria-label', uiText.cookieAria);
+  banner.innerHTML = `
+    <p>
+      ${uiText.cookieBody}
+      <a href="${uiText.cookieHref}">${uiText.cookieLinkLabel}</a>.
+    </p>
+    <div class="cookie-actions">
+      <button type="button" class="btn btn-soft" data-cookie-choice="reject">${uiText.cookieReject}</button>
+      <button type="button" class="btn btn-primary" data-cookie-choice="accept">${uiText.cookieAccept}</button>
+    </div>
+  `;
+
+  banner.querySelectorAll('[data-cookie-choice]').forEach((button) => {
+    button.addEventListener('click', () => {
+      saveCookieConsent(button.getAttribute('data-cookie-choice'));
+      banner.remove();
+    });
+  });
+
+  document.body.appendChild(banner);
+}
+
+createCookieBanner();
